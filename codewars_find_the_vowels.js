@@ -13,6 +13,21 @@ Vowels in this context refers to: a e i o u y (including upper case)
 This is indexed from [1..n] (not zero indexed!)
 */
 
-function vowelIndices(word){
-  //your code here
+const vowelIndices = (word) => {
+  const vowels = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true,
+    y: true
+  };
+  const indexes = [];
+  for(let i = 0; i < word.length; i++) {
+    if(vowels[word[i].toLowerCase()]) {
+      indexes.push(i+1);
+    }
+  }
+
+  return indexes;
 }
