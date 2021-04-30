@@ -28,6 +28,5 @@ const vowelIndices = (word) => {
       indexes.push(i+1);
     }
   }
-
   return indexes;
 }
